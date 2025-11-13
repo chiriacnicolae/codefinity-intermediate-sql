@@ -1,0 +1,2 @@
+select product.name as product_name, product.amount from category JOIN product on category.id=product.category_id 
+where  category.name='Meat' or category.name='Grains' and product.amount < 100 order by product.name; 
